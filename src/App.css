@@ -1,0 +1,79 @@
+body{
+  margin: 0em;
+  font-family: Programme, "Gothic A1", Arial, sans-serif;
+}
+
+/*CSS for Header Elements*/
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 41px;
+  background-color: rgb(255,255,100);
+}
+.searchBar{
+  display: flex;
+  width: 220px;
+  height: calc(41px - 0.75rem);
+  background-color: white;
+  margin-left: .375rem;
+}
+#searchGenius{
+  border: none;
+  font-size: .9rem;
+  font-weight: 500;
+  width: 180px;
+  padding: 0 .125rem 0 .5rem;
+  text-overflow: ellipsis;
+  letter-spacing: .035rem;
+}
+#searchGenius::placeholder{
+  position: relative;
+  top: 1px;
+  color: black;
+}
+#searchGenius:focus{
+  outline: none;
+}
+#searchGenius:focus::placeholder{
+  color: grey;
+}
+.searchButton{
+  width: 41px;
+  height: 100%;
+  padding: 0rem;
+  border: none;
+  background-color: white;
+}
+.searchIcon{
+  position: relative;
+  width: 1.125rem;
+  top: .1rem;
+  left: .1rem;
+}
+.homeLink{
+  height: 25.53px;
+  position: absolute;
+  left: 44.1%;
+  bottom: 4.735px;
+}
+.geniusLogo{
+  height: 19px;
+}
+.signUpIn{
+  display: flex;
+  height: 100%;
+}
+.signUp, .signIn{
+  padding: .95rem .5rem 0rem .5rem;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .035rem;
+  text-decoration: none;
+  color: black;
+}
+.signUp:hover, .signIn:hover{
+  border-bottom: 6px solid #f33;
+  transition: .1s border-bottom;
+}
